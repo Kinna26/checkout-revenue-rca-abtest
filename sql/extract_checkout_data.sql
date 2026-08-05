@@ -3,14 +3,6 @@
 -- =====================================================================
 -- Purpose: Pull daily transaction-level data covering the 4 weeks before
 -- and 2 weeks after the new checkout launch (2026-06-01), so it can be
--- analyzed for a revenue drop, segmented root cause, and A/B validation.
---
--- Assumes a transactions table structure like:
---   transactions (
---     transaction_id, txn_date, region, channel,
---     customer_segment, product_category,
---     order_completed, revenue
---   )
 -- =====================================================================
 
 SELECT

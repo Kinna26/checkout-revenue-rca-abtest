@@ -1,9 +1,6 @@
--- =====================================================================
 -- Extraction Query: Checkout Revenue Data (Pre vs Post Launch)
--- =====================================================================
 -- Purpose: Pull daily transaction-level data covering the 4 weeks before
 -- and 2 weeks after the new checkout launch (2026-06-01), so it can be
--- =====================================================================
 
 SELECT
     transaction_id,
@@ -26,10 +23,10 @@ ORDER BY
     txn_date ASC;
 
 
--- =====================================================================
+
 -- Quick sanity check query: daily revenue trend
 -- (This is what you'd run first to eyeball the drop before deep analysis)
--- =====================================================================
+
 
 SELECT
     txn_date AS date,
